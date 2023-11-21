@@ -1,0 +1,58 @@
+body {
+    overflow: hidden; /* Evita a barra de rolagem */
+}
+
+#player {
+    position: absolute;
+    width: 50px; /* Ajuste a largura para a largura desejada */
+    height: 50px; /* Ajuste a altura para a altura desejada */
+    z-index: 5; /* Coloque o jogador na frente do parallax */
+    background-repeat: no-repeat; /* Evita a repetição do sprite */
+    background-size: contain; /* Ajusta o tamanho do sprite para se ajustar ao jogador, mantendo a proporção da imagem */
+}
+
+.background {
+    position: absolute;
+    width: 200%; /* Aumente a largura para 200% para clonar a imagem */
+    height: 100vh; /* Ajuste a altura para a altura da janela de visualização */
+    background-size: 50% auto; /* Ajuste o tamanho do fundo para 50% para compensar a largura aumentada */
+    background-repeat: repeat-x; /* Repita a imagem horizontalmente */
+    background-position: 0 100%; /* Fixe a imagem na base da tela e ajuste a posição no eixo Y */
+    visibility: hidden; /* Esconda as imagens de fundo inicialmente */
+}
+
+.parallax {
+    animation: parallax 5s linear infinite;
+    visibility: visible; /* Exiba as imagens de fundo quando a animação começar */
+}
+
+#background1 {
+    background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_0-650x366.png');
+    animation-duration: 20s; /* Ajuste a duração da animação para cada camada de fundo */
+}
+
+#background2 {
+    background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_1-650x112.png');
+    animation-duration: 15s;
+    z-index: 1; /* Coloque esta imagem na frente das outras */
+}
+
+#background3 {
+    background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_2-650x221.png');
+    animation-duration: 10s;
+}
+
+#background4 {
+    background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_3-650x117.png');
+    animation-duration: 5s;
+}
+
+#background5 {
+    background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_4-650x119.png');
+    animation-duration: 2s;
+}
+
+@keyframes parallax {
+    0% { background-position: 0 100%; }
+    100% { background-position: -100% 100%; }
+}
