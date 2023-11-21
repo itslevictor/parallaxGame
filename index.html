@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogo Simples</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div id="background1" class="background"></div>
+    <div id="background2" class="background"></div>
+    <div id="background3" class="background"></div>
+    <div id="background4" class="background"></div>
+    <div id="background5" class="background"></div>
+
+    <div id="menu" style="position: relative; z-index: 3;">
+        <button id="play">Play</button>
+        <button id="select-skin">Selecionar Skin</button>
+    </div>
+
+    <div id="skins" style="display: none; position: relative; z-index: 3;">
+        <button id="blue-skin">Skin Azul</button>
+        <button id="pink-skin">Skin Rosa</button>
+    </div>
+
+    <div id="game" style="display: none; position: relative; z-index: 3;">
+        <button id="back-to-menu">Voltar ao Menu</button>
+        <div id="player"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
