@@ -26,6 +26,15 @@ body {
     visibility: visible; /* Exiba as imagens de fundo quando a animação começar */
 }
 
+.parallax4 {
+    animation: parallax 5s linear infinite;
+    visibility: visible; /* Exiba as imagens de fundo quando a animação começar */
+}
+
+.parallax5 {
+    animation: parallax 5s linear infinite;
+    visibility: visible; /* Exiba as imagens de fundo quando a animação começar */
+}
 #background1 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_0-650x366.png');
     animation-duration: 20s; /* Ajuste a duração da animação para cada camada de fundo */
@@ -33,25 +42,22 @@ body {
 
 #background2 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_1-650x112.png');
-    animation: parallax2 15s;
+    animation: 15s;
     z-index: 1; /* Coloque esta imagem na frente das outras */
 }
 
 #background3 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_2-650x221.png');
     animation-duration: 10s;
-}
 
 #background4 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_3-650x117.png');
-    animation-duration: 5s;
-    background-position: 0 120%; /* Ajuste o valor de acordo com a necessidade */
+    animation: parallax4 5s linear infinite;
 }
 
 #background5 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_4-650x119.png');
-    animation-duration: 2s;
-    background-position: 0 120%; /* Ajuste o valor de acordo com a necessidade */
+    animation: parallax5 2s linear infinite;
 }
 
 @keyframes parallax {
@@ -59,7 +65,13 @@ body {
     100% { background-position: -100% 100%; }
 }
 
-@keyframes parallax2 {
-    0% { background-position: 0 120%; }
-    100% { background-position: -100% 120%; }
+}
+@keyframes parallax4 {
+    0% { background-position: 0 80%; }
+    100% { background-position: -100% 80%; }
+}
+
+@keyframes parallax5 {
+    0% { background-position: 0 70%; }
+    100% { background-position: -100% 70%; }
 }
