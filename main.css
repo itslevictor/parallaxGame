@@ -45,13 +45,13 @@ body {
 #background4 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_3-650x117.png');
     animation-duration: 5s;
-    background-position: 0 80%; /* Ajuste o valor de acordo com a necessidade */
+    background-position: 0 120%; /* Ajuste o valor de acordo com a necessidade */
 }
 
 #background5 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_4-650x119.png');
     animation-duration: 2s;
-    background-position: 0 80%; /* Ajuste o valor de acordo com a necessidade */
+    background-position: 0 120%; /* Ajuste o valor de acordo com a necessidade */
 }
 
 @keyframes parallax {
