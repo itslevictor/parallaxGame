@@ -35,7 +35,7 @@ body {
 #background2 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_1-650x112.png');
     animation: parallax 15s linear infinite;
-    z-index: 4; /* Coloque esta imagem na frente das outras */
+    z-index: 5; /* Coloque esta imagem na frente das outras */
 }
 
 #background3 {
@@ -57,7 +57,7 @@ body {
     animation: parallax 2s linear infinite;
     bottom: 20%; /* Ajuste este valor para mover o background5 para cima */
     position: relative;
-    z-index: 3;
+    z-index: 4;
 }
 
 @keyframes parallax {
