@@ -19,7 +19,7 @@ document.getElementById('select-skin').addEventListener('click', function() {
 });
 
 document.getElementById('blue-skin').addEventListener('click', function() {
-    player.style.backgroundImage = 'url(https://i.pinimg.com/736x/dd/b0/a4/ddb0a4f27b9be7ffedf03a872545a3e2.jpg)';
+    player.style.backgroundImage = 'url(https://uploaddeimagens.com.br/images/004/670/626/original/frame-2.png?1700659202)';
     document.getElementById('skins').style.display = 'none';
     document.getElementById('menu').style.display = 'block';
 });
