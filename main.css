@@ -8,8 +8,8 @@ body {
 
 #player {
     position: absolute;
-    width: 50px; /* Ajuste a largura para a largura desejada */
-    height: 50px; /* Ajuste a altura para a altura desejada */
+    width: 0.08px; /* Ajuste a largura para a largura desejada */
+    height: 0.08px; /* Ajuste a altura para a altura desejada */
     z-index: 5; /* Coloque o jogador na frente do parallax */
     background-repeat: no-repeat; /* Evita a repetição do sprite */
     background-size: contain; /* Ajusta o tamanho do sprite para se ajustar ao jogador, mantendo a proporção da imagem */
@@ -18,7 +18,7 @@ body {
 .background {
     position: absolute;
     width: 200%; /* Aumente a largura para 200% para clonar a imagem */
-    height: 100vh; /* Ajuste a altura para a altura da janela de visualização */
+    height: 110vh; /* Ajuste a altura para um pouco mais que a altura da janela de visualização para evitar espaços vazios verticais */
     background-size: 50% auto; /* Ajuste o tamanho do fundo para 50% para compensar a largura aumentada */
     background-repeat: repeat-x; /* Repita a imagem horizontalmente */
     background-position: 0 100%; /* Fixe a imagem na base da tela e ajuste a posição no eixo Y */
@@ -66,4 +66,19 @@ body {
 @keyframes parallax {
     0% { background-position: 0 100%; }
     100% { background-position: -100% 100%; }
+}
+
+/* Estilos para celulares em modo retrato */
+@media only screen and (max-width: 760px) and (orientation: portrait) {
+    /* Seu código aqui */
+}
+
+/* Estilos para celulares em modo paisagem */
+@media only screen and (max-width: 760px) and (orientation: landscape) {
+    /* Seu código aqui */
+}
+
+/* Estilos para dispositivos não móveis */
+@media only screen and (min-width: 761px) {
+    /* Seu código aqui */
 }
