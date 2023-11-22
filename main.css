@@ -2,6 +2,10 @@ body {
     overflow: hidden; /* Evita a barra de rolagem */
 }
 
+.button {
+    z-index: 10; /* Defina um valor maior do que o z-index do jogador */
+}
+
 #player {
     position: absolute;
     width: 50px; /* Ajuste a largura para a largura desejada */
