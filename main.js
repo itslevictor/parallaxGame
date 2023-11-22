@@ -3,6 +3,10 @@ var speed = 5;
 var backgrounds = document.getElementsByClassName('background');
 var keys = {};
 
+// Defina a largura e a altura do jogador como uma porcentagem da largura/altura da janela
+player.style.width = window.innerWidth * 0.05 + 'px';
+player.style.height = window.innerHeight * 0.05 + 'px';
+
 document.getElementById('play').addEventListener('click', function() {
     document.getElementById('menu').style.display = 'none';
     document.getElementById('game').style.display = 'block';
@@ -47,16 +51,16 @@ window.addEventListener('keyup', function(event) {
 });
 
 function gameLoop() {
-    if (keys['w'] || keys['ArrowUp']) {
+    if ((keys['w'] || keys['ArrowUp']) && parseInt(player.style.top) > 0) {
         player.style.top = (parseInt(player.style.top) - speed) + 'px';
     }
-    if (keys['a'] || keys['ArrowLeft']) {
+    if ((keys['a'] || keys['ArrowLeft']) && parseInt(player.style.left) > 0) {
         player.style.left = (parseInt(player.style.left) - speed) + 'px';
     }
-    if (keys['s'] || keys['ArrowDown']) {
+    if ((keys['s'] || keys['ArrowDown']) && parseInt(player.style.top) < window.innerHeight - player.offsetHeight) {
         player.style.top = (parseInt(player.style.top) + speed) + 'px';
     }
-    if (keys['d'] || keys['ArrowRight']) {
+    if ((keys['d'] || keys['ArrowRight']) && parseInt(player.style.left) < window.innerWidth - player.offsetWidth) {
         player.style.left = (parseInt(player.style.left) + speed) + 'px';
     }
 
@@ -64,3 +68,17 @@ function gameLoop() {
 }
 
 gameLoop();
+
+// Verifique o tipo de dispositivo e a orientação da tela
+var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+var isLandscape = window.matchMedia("(orientation: landscape)").matches;
+
+if (isMobile) {
+    if (isLandscape) {
+        // Código para celulares em modo paisagem
+    } else {
+        // Código para celulares em modo retrato
+    }
+} else {
+    // Código para dispositivos não móveis
+}
