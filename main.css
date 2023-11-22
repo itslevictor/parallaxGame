@@ -33,27 +33,29 @@ body {
 
 #background2 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_1-650x112.png');
-    animation: parallax 15s linear infinite;
-    z-index: 1; /* Coloque esta imagem na frente das outras */
+    animation: parallax 3s linear infinite;
+    z-index: 3; /* Coloque esta imagem na frente das outras */
 }
 
 #background3 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_3-650x117.png');
-    animation-duration: 10s;
+    animation-duration: 4sg;
+    bottom: 10%;
     z-index: 2; /* Coloque esta imagem na frente das outras */
 }
 
 #background4 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_4-650x119.png');
-    animation: parallax 5s linear infinite;
-    bottom: 10%; /* Ajuste este valor para mover o background4 para cima */
+    animation: parallax 7s linear infinite;
+    bottom: 20%; /* Ajuste este valor para mover o background4 para cima */
     z-index: 1; /* Coloque esta imagem atrás de #background3 */
 }
 
 #background5 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_2-650x221.png');
-    animation: parallax 2s linear infinite;
+    animation: parallax 10s linear infinite;
     bottom: 20%; /* Ajuste este valor para mover o background5 para cima */
+    
 }
 
 
