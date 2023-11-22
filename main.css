@@ -26,15 +26,6 @@ body {
     visibility: visible; /* Exiba as imagens de fundo quando a animação começar */
 }
 
-.parallax4 {
-    animation: parallax 5s linear infinite;
-    visibility: visible; /* Exiba as imagens de fundo quando a animação começar */
-}
-
-.parallax5 {
-    animation: parallax 5s linear infinite;
-    visibility: visible; /* Exiba as imagens de fundo quando a animação começar */
-}
 #background1 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_0-650x366.png');
     animation-duration: 20s; /* Ajuste a duração da animação para cada camada de fundo */
@@ -50,28 +41,21 @@ body {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_2-650x221.png');
     animation-duration: 10s;
 }
+
 #background4 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_3-650x117.png');
-    animation: parallax4 5s linear infinite;
+    animation: parallax 5s linear infinite;
+    bottom: 10%; /* Ajuste este valor para mover o background4 para cima */
 }
 
 #background5 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_4-650x119.png');
-    animation: parallax5 2s linear infinite;
+    animation: parallax 2s linear infinite;
+    bottom: 20%; /* Ajuste este valor para mover o background5 para cima */
 }
+
 
 @keyframes parallax {
     0% { background-position: 0 100%; }
     100% { background-position: -100% 100%; }
-}
-
-}
-@keyframes parallax4 {
-    0% { background-position: 0 80%; }
-    100% { background-position: -100% 80%; }
-}
-
-@keyframes parallax5 {
-    0% { background-position: 0 70%; }
-    100% { background-position: -100% 70%; }
 }
