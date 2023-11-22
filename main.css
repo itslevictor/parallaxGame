@@ -40,6 +40,7 @@ body {
 #background3 {
     background-image: url('https://www.crieseusjogos.com.br/wp-content/uploads/2019/12/background-parallax_2-650x221.png');
     animation-duration: 10s;
+    background-position: 0 80%; /* Ajuste o valor de acordo com a necessidade */
 }
 
 #background4 {
