@@ -1,10 +1,49 @@
 body {
     overflow: hidden; /* Evita a barra de rolagem */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
 }
 
 .button {
     z-index: 10; /* Defina um valor maior do que o z-index do jogador */
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/*#blue-skin {
+    background-image: url('https://uploaddeimagens.com.br/images/004/670/624/full/frame-1.png?1700659188');
+    background-size: cover;
+    background-position: center;
+}
+
+#pink-skin {
+    background-image: url('https://uploaddeimagens.com.br/imagens/FRmGeBA');
+    background-size: cover;
+    background-position: center;
+}*/
+
+
+#menu, #skins, #game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 
 #player {
     position: absolute;
@@ -13,6 +52,22 @@ body {
     z-index: 5; /* Coloque o jogador na frente do parallax */
     background-repeat: no-repeat; /* Evita a repetição do sprite */
     background-size: contain; /* Ajusta o tamanho do sprite para se ajustar ao jogador, mantendo a proporção da imagem */
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+#boss {
+    position: absolute;
+    width: 0.08px; /* Ajuste a largura para a largura desejada */
+    height: 0.08px; /* Ajuste a altura para a altura desejada */
+    z-index: 5; /* Coloque o jogador na frente do parallax */
+    background-repeat: no-repeat; /* Evita a repetição do sprite */
+    background-size: contain; /* Ajusta o tamanho do sprite para se ajustar ao jogador, mantendo a proporção da imagem */
+    width: 50px;
+    height: 50px;
+    
 }
 
 .background {
