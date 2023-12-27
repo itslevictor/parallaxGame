@@ -1,6 +1,5 @@
-#Jogo Colaborativo!
-
-###Um projeto em desenvolvimento
+# Jogo Colaborativo!
+### Um projeto em desenvolvimento
 
 Durante um curso eu (Victor) e Daniel decidimos nos juntar para desenvolver um jogo simples para browser!
 Nossos principais desafios foram:
